@@ -25,19 +25,19 @@ const Body = () => {
 
   async function getRestraunt() {
     const data = await fetch(
-      "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.591945&lng=73.73897649999999&page_type=DESKTOP_WEB_LISTING"
+      "https://foodfire.onrender.com/api/restaurants?lat=21.1702401&lng=72.83106070000001&page_type=DESKTOP_WEB_LISTING"
     );
     const json = await data.json();
     // console.log(json);
 
     setRestraunts(
-      json.data.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
     setAllRestraunts(
-      json.data.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json.data.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
     setFilteredRestraunts(
-      json.data.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json.data.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
   }
 
@@ -61,7 +61,7 @@ const Body = () => {
     return <h1> Offline hoo bhaiya</h1>;
   }
 
-  return filteredRestraunts.length === 0 ? (
+  return filteredRestraunts.length == 0 ? (
     <Shimmer />
   ) : (
     <>
