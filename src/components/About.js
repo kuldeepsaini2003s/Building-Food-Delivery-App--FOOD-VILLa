@@ -1,6 +1,5 @@
 import React from "react";
-import Profile from "./Profile";
-import ProfileClass from "./ProfileClass";
+import burgerImg from "../Images/burger.png"
 // class About extends React.Component {
 //    constructor(props){
 //         super(props);
@@ -47,7 +46,7 @@ const About = () => {
           </h4>
         </div>
         <div>
-          <img src="https://foodfire-app.netlify.app/burger-image.ec55d069.png"></img>
+          <img src={burgerImg}></img>
         </div>
       </div>
     </>

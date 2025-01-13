@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 *{
     font-family: 'PT Sans' 'calibri', sans-serif;
 }
