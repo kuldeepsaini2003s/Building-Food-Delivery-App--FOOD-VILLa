@@ -16,10 +16,12 @@ import {
 import RestaurantMenu from "../components/RestaurantMenu";
 import { lazy } from "react";
 import Shimmer from "../components/Shimmer";
+import { useContext } from "react";
 import info1 from "./userContext";
 import { Provider } from "react-redux";
 import store from "./store";
 import Cart from "../components/Cart";
+import Search from "../components/Search";
 import Login from "../components/Login";
 
 const Instamart = lazy(() => import("../components/InstaMart"));

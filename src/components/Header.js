@@ -1,15 +1,18 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import About from "./About";
 import { Link } from "react-router-dom";
 import useOnline from "../utils/useOnline";
+import userContext from "../utils/userContext";
 import { useContext } from "react";
 import info1 from "../utils/userContext";
 import { useSelector } from "react-redux";
-import Logo from "../Images/Yellow And Red Modern Delivery Pizza Logo.png";
+import store from "../utils/store";
+
 export const Title = () => {
   return (
     <a href="/">
       {" "}
-      <img className="h-28 p-2" src={Logo} alt="Logo" />
+      <img className="h-28 p-2" src="" alt="Logo" />
     </a>
   );
 }; //name export
@@ -47,26 +50,14 @@ const Header = () => {
               Contact
             </li>
           </Link>
+          {/* <Link to="/instamart">
+            <li className="">Instamart</li>
+          </Link> */}
           <Link to="/cart">
             <li className="text-Primary hover:text-Secondry hover:bg-Orange  h-10 w-10 pt-2 text-center rounded-lg">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-shopping-cart"
-              >
-                <circle cx="8" cy="21" r="1" />
-                <circle cx="19" cy="21" r="1" />
-                <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
-              </svg>
+              <i class="fa-solid fa-cart-shopping"></i>
             </li>
-            {cartItems.length}
+            {/* {cartItems.length}  */}
           </Link>
           <Link to="/login">
             <li className="text-Primary hover:text-Secondry hover:bg-Orange h-10 w-16 pt-2 text-center rounded-lg relative pr-3">

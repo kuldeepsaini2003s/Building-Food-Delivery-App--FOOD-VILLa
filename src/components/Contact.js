@@ -1,11 +1,13 @@
 import React from "react";
-import pizzaImg from "../Images/pizza.png";
 
 const Contact = () => {
   return (
     <div className="flex justify-between ml-44 mr-44 mt-20 items-center">
       <div>
-        <img className="h-64" src={pizzaImg}></img>
+        <img
+          className="h-64"
+          src="https://foodfire-app.netlify.app/Contact-Us.13c5d28a.png"
+        ></img>
       </div>
       <div className="">
         <div className="flex flex-col gap-5 items-center">
