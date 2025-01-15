@@ -35,7 +35,7 @@ const RestaurantMenu = () => {
       <div className="flex justify-center">
         <div> { " "}</div>
         <ul className="">
-      {
+      {/* {
           (restaurant[5]?.card?.card?.itemCards).map(
             (items,index)=>(
              // (() => { console.log(items); })()
@@ -50,7 +50,7 @@ const RestaurantMenu = () => {
              ) 
            
            
-        }
+        } */}
       
         </ul>
      

@@ -1,15 +1,12 @@
 import React from "react";
-
+import pizza from "../Images/contact us.png";
 const Contact = () => {
   return (
-    <div className="flex justify-between ml-44 mr-44 mt-20 items-center">
-      <div>
-        <img
-          className="h-64"
-          src="https://foodfire-app.netlify.app/Contact-Us.13c5d28a.png"
-        ></img>
+    <div className="flex justify-center pt-10 items-center ">
+      <div className="w-[40%] flex justify-center items-center">
+        <img className="w-[80%]" src={pizza}></img>
       </div>
-      <div className="">
+      <div className="w-[50%]">
         <div className="flex flex-col gap-5 items-center">
           <h2 className="font-bold text-5xl font-PT Sans">Contact us</h2>
           <input

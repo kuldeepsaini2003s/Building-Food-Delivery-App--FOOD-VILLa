@@ -69,7 +69,7 @@ const Body = () => {
         <input
           type="text"
           placeholder="Search  a restaurant you want..."
-          className="h-10 w-[30rem] px-4 border border-gray-400  text-Secondry text-base outline-none rounded-l"
+          className="h-10 w-[30rem] px-4 border border-gray-400  text-base outline-none rounded-l"
           value={searchTXT}
           onChange={handleSearch}
         ></input>

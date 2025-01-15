@@ -1,6 +1,6 @@
 import React from "react";
-import Profile from "./Profile";
-import ProfileClass from "./ProfileClass";
+import burger from "../Images/burger.png";
+
 // class About extends React.Component {
 //    constructor(props){
 //         super(props);
@@ -33,12 +33,12 @@ import ProfileClass from "./ProfileClass";
 const About = () => {
   return (
     <>
-      <div className="flex justify-center items-center pt-28">
-        <div className="ml-32 mr-32 ">
-          <h1 className="w-[400px] font-bold text-[70px] text-Primary">
+      <div className="flex p-10 justify-center items-center ">
+        <div className="w-[50%]">
+          <h1 className="font-bold leading-[5rem] text-[5rem] w-full text-Primary">
             Welcome to The world of
           </h1>
-          <span className="font-bold text-[70px]  bg-Orange pl-2 pr-2 rounded-lg text-Secondry">
+          <span className="font-bold text-[4rem]  bg-Orange px-3 rounded-lg text-Secondry">
             Tasty & Fresh Food
           </span>
           <h4 className="font-bold text-[25px] text-Primary italic">
@@ -46,8 +46,8 @@ const About = () => {
             <span className="text-LightOrange">Villa</span> healthy meal"
           </h4>
         </div>
-        <div>
-          <img src="https://foodfire-app.netlify.app/burger-image.ec55d069.png"></img>
+        <div className="w-[50%]">
+          <img className="w-full" src={burger}></img>
         </div>
       </div>
     </>
